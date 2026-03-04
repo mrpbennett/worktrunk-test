@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - MyApp</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        background-color: #2d5a27;
+        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+        color: white;
+      }
+
+      nav {
+        width: 100%;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      nav .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #90EE90;
+        text-decoration: none;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.25s;
+      }
+
+      nav a:hover {
+        color: #90EE90;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .blurb {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 2rem;
+        border-radius: 16px;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .blurb p {
+        margin-bottom: 1rem;
+      }
+
+      .blurb em {
+        color: #90EE90;
+        font-style: normal;
+      }
+
+      .cta {
+        margin-top: 2rem;
+      }
+
+      .cta a {
+        display: inline-block;
+        background-color: #90EE90;
+        color: #1a3d14;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .cta a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 20px rgba(144, 238, 144, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="logo">MyApp</a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>About Us</h1>
+      
+      <div class="blurb">
+        <p>Welcome to <em>MyApp</em> — where we turn coffee into code and bugs into features (sometimes).</p>
+        <p>Founded in 2024 by a group of developers who couldn't decide on a restaurant, we specialize in making <em>things</em> that do <em>stuff</em>. Our mission is to solve problems you didn't know you had, while using too many parentheses.</p>
+        <p>When we're not Googling our own errors, we enjoy long walks on the beach and debugging CSS at 2am. Our favorite quote: <em>"It works on my machine"</em> — Anonymous Developer</p>
+      </div>
+
+      <div class="cta">
+        <a href="/">Back to Home</a>
+      </div>
+    </div>
+  </body>
+</html>
